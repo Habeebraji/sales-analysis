@@ -53,7 +53,8 @@ Pizza_name
 
 ## Code
 
-For the rest of the code, check the Sql_queries [Sql_queries](docs/Sql_queries.sql)
+For the rest of the code, check the Sql_queries [SQL Script](Sql_queries.sql)
+
 ```
 show databases;
 use pizza_sales;
