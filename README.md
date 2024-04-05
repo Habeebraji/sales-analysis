@@ -51,6 +51,34 @@ Pizza_name
 - Top 5 best seller by revenue,total quantity and total orders
 -  Least bottom 5 sellers by revenue,total quantity and total orders
 
+## Code
+
+For the rest of the code, check the Sql_queries [Analysis](docs/Sql_queries.sql)
+```
+show databases;
+use pizza_sales;
+
+--------- Searching for null values----------
+
+select * FROM pizza where pizza_id is NULL or order_id is NULL or pizza_name_id is NULL or
+ quantity is NULL or order_date is NULL or order_time is NULL or unit_price is NULL or total_price is NULL or 
+ pizza_size is NULL or pizza_category is NULL or 
+pizza_ingredients is NULL or pizza_name ;
+
+------- Deleting nulll values-------------
+
+DELETE from pizza where  pizza_id is NULL or order_id is NULL or pizza_name_id is NULL or
+ quantity is NULL or order_date is NULL or order_time is NULL or unit_price is NULL or total_price is NULL or 
+ pizza_size is NULL or pizza_category is NULL or 
+pizza_ingredients is NULL or pizza_name ;
+
+---------- Removing duplicate -----------------
+with my_cte as (
+select *, row_number() over(partition by pizza_id, order_id, pizza_name_id, quantity, order_date, order_time, unit_price, total_price, pizza_size,
+ pizza_category, pizza_ingredients, pizza_name order by pizza_id desc) as duplicate from pizza)
+  delete  from my_CTE where duplicate >1; ```
+  
+ 
  ## Results/Findings
  The Analysis results are summarized as follows:
 - Majority of the sales occured on Thursdays and Fridays
