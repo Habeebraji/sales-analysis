@@ -5,7 +5,7 @@ This data analysis project aim to provide insight into sales performance of pizz
 
 
  ## Data source
-Pizza sales data : The primary source of dataset used in this analyisis is the "Pizza_sales.csv" file containing detailed information about each sales made by the company. This dataset contains the following columns:
+Pizza sales data : The primary source of dataset used in this analyisis is the [Data File](pizza_sales.csv) file containing detailed information about each sales made by the company. This dataset contains the following columns:
 Pizza_id
 0rder_id
 Pizza_name_id
