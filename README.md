@@ -1,7 +1,7 @@
 # Pizza  sales Analysis
 
 ## Project overview
-This data analysis project aim to provide insight into sales performance of pizza over past years, by analyzing various aspects of the sales data, we seek to identify trends, make driven recomendation and gain deeper understanding of the company performance. The primary focus areas includes;
+This data analysis project aim to provide insight into sales performance of pizza over the years, by analyzing various aspects of the sales data, we seek to identify trends, make driven recomendation and gain deeper understanding of the company performance.
 
 
  ## Data source
